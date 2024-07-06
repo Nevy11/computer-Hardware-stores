@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hardware</title>
+    {% load static %} {% load bootstrap5 %} {% bootstrap_css %} {%
+    bootstrap_javascript %}
+    <link
+      rel="stylesheet"
+      href="templates/node_modules/bootstrap5/src/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <style>
+      .h1 {
+        text-align: center;
+      }
+      .body {
+        background-color: bisque;
+      }
+      .marq {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+      }
+      .rounded-pill {
+        width: 150px;
+        height: 100px;
+        border: none;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="clearfix"></div>
+    <div class="clearfix mx-2 my-3">
+      <div class="float-start h2">
+        <img
+          src="{{ MEDIA_URL }}hard.jpg"
+          alt="Image not found"
+          class="rounded-pill"
+        />
+        {{ cname }}
+      </div>
+      <div class="float-end">
+        <div>{{ email }}</div>
+        <div>{{ phoneNumber }}</div>
+      </div>
+    </div>
+
+    <div class="h1 container-sm container-md container-lg text-dark my-5">
+      Electronics Hardware
+    </div>
+
+    <marquee behavior="move" direction="right" class="mb-5">
+      <div
+        class="container-sm container-lg container-md container-lg my-3 marq h2"
+      >
+        Welcome to {{ cname }}
+      </div>
+    </marquee>
+
+    <div class="h1 service mb-5 pb-5">
+      Services
+      <mark class="text-white bg-success">Offered</mark>
+    </div>
+
+    <div class="row row-sm-6 row-md-6 row-lg">
+      <div class="col-sm-9 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Repairing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar blocks for other cards as needed -->
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <img
+          src="{{ MEDIA_URL }}hard.jpg"
+          alt="image unavailable"
+          class="w-100"
+          style="height: 200px"
+        />
+      </div>
+    </div>
+    <div class="my-5 py-5">hey</div>
+  </body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hardware</title>
+    {% load static %} {% load bootstrap5 %} {% bootstrap_css %}
+    <!-- {%bootstrap_javascript %} -->
+    <link
+      rel="stylesheet"
+      href="templates/node_modules/bootstrap5/src/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <style>
+      .h1 {
+        text-align: center;
+      }
+      .body {
+        background-color: bisque;
+      }
+      .marq {
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-style: italic;
+      }
+      .rounded-pill {
+        width: 150px;
+        height: 100px;
+        border: none;
+        font-style: italic;
+      }
+      .card {
+        /* width: 400px; */
+        font-style: italic;
+        background-color: bisque;
+        border: none;
+        /* display: flex;
+        flex-direction: column; */
+      }
+      /* .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      } */
+      .service {
+        font-style: italic;
+      }
+      .list-group-item {
+        color: bisque;
+        border: none;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="clearfix"></div>
+    <div class="clearfix mx-2 my-3">
+      <div class="float-start h2">
+        <img
+          src="{{ MEDIA_URL }}hard.jpg"
+          alt="Image not found"
+          class="rounded-pill"
+        />
+        {{ cname }}
+      </div>
+      <div class="float-end">
+        <div>{{ email }}</div>
+        <div>{{ phoneNumber }}</div>
+      </div>
+    </div>
+
+    <div class="h1 container-sm container-md container-lg text-dark my-5">
+      Electronics Hardware
+    </div>
+
+    <div class="card my-5">
+      <img src="{{MEDIA_URL}}hard.jpg" alt="Not available" />
+      <div class="card-img-overlay">
+        <div class="card-title my-5" style="color: white">
+          <marquee behavior="move" direction="right" class="my-5">
+            <div
+              class="container-sm container-lg container-md container-lg my-5 marq h1"
+            >
+              Welcome to {{ cname }}
+            </div>
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container container-sm container-lg container-md bg-dark text-white"
+    >
+      <div class="h1 service my-5 pb-5 pt-5">Services Offered</div>
+    </div>
+    <div class="row row-sm row-md row-lg">
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- third card  -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- forth -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- third card  -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container container-sm container-lg container-md bg-dark text-white"
+    >
+      <div class="h1 service my-5 pb-5 pt-5">
+        Items sold
+        <!-- <mark class="text-white bg-success">sold</mark> -->
+      </div>
+    </div>
+    <div class="row row-sm row-md row-lg">
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- third card  -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- forth -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- second card -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+      <!-- third card  -->
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <div class="card card-sm card-md card-lg h-100">
+          <img
+            src="{{ MEDIA_URL }}hard.jpg"
+            alt="image unavailable"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <div class="card-title">Chargers</div>
+            <div class="card-text">Reparing broken and burnt chargers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="h1 my-5" style="text-align: center">Hardware's Details</div>
+    <div class="h2">Chargers</div>
+    <div class="my-5 bg-warning">
+      <div class="py-5 px-5">
+        This is a time of revolution for the generation z and millenials The
+        gorvenment are trying to cover the youth by taxing most of the things
+        they are using is something really bad. Some of us we have zero or less
+        money in our pockets.
+      </div>
+    </div>
+    <div class="h2">Chargers</div>
+    <div class="my-5 bg-warning">
+      <div class="py-5 px-5">
+        This is a time of revolution for the generation z and millenials The
+        gorvenment are trying to cover the youth by taxing most of the things
+        they are using is something really bad. Some of us we have zero or less
+        money in our pockets.
+      </div>
+    </div>
+    <div class="h2">Chargers</div>
+    <div class="my-5 bg-warning">
+      <div class="py-5 px-5">
+        This is a time of revolution for the generation z and millenials The
+        gorvenment are trying to cover the youth by taxing most of the things
+        they are using is something really bad. Some of us we have zero or less
+        money in our pockets.
+      </div>
+    </div>
+    <div class="h2">Chargers</div>
+    <div class="my-5 bg-warning">
+      <div class="py-5 px-5">
+        This is a time of revolution for the generation z and millenials The
+        gorvenment are trying to cover the youth by taxing most of the things
+        they are using is something really bad. Some of us we have zero or less
+        money in our pockets.
+      </div>
+    </div>
+
+    <form action="">
+      <div class="form-group my-5">
+        <label for="something" class="px-3">Tell us something</label>
+        <input
+          type="text"
+          class="form-control py-5 px-5"
+          placeholder="Tell us something"
+          id="something"
+        />
+      </div>
+    </form>
+
+    <footer class="bg-dark text-white" style="height: 150px">
+      <div class="row">
+        <div class="col">
+          <ul
+            class="list-group mx-5"
+            style="display: flex; flex-direction: column; border: none"
+          >
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul
+            class="list-group mx-5"
+            style="display: flex; flex-direction: column; border: none"
+          >
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul
+            class="list-group mx-5"
+            style="display: flex; flex-direction: column; border: none"
+          >
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+            <li class="list-group-item text-white bg-dark">home</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 
+  the user must click for a service and make the purchase
+  so service click the service make an order
+  selling products
+  email the owner something
+  link nav-bar
+  about the employee
+ -->
